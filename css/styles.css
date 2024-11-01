@@ -76,6 +76,7 @@ main {
 .section a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .section h2 {
@@ -94,18 +95,19 @@ main {
 
 .section img {
     max-width: 100%;
-    border-radius: 5px;
+    border-radius: 10px;
     flex: 1 1 40%;
-    width: 30%;
-    padding: 5rem 10rem;
-}
-
-.section cite {
-    font-size: .5em;
+    width: 40%;
 }
 
 .section-content div {
     flex: 1 1 50%;
+}
+
+.section-content figure {
+    flex: 50%;
+    padding: 2%;
+    border: 2px white dashed;
 }
 
 #intro {
@@ -116,7 +118,8 @@ main {
     color: #005f9e;
 }
 
-#intro h2 {
+#intro h2,
+#history h2 {
     text-shadow: 3px 3px 4px white;
 }
 
@@ -125,6 +128,11 @@ main {
     border-radius: 15px;
     padding: 5rem 2rem;
     margin: 2rem 0;
+    color: white;
+}
+
+#history h2 {
+    color: #9e0000;
 }
 
 /* Footer */
