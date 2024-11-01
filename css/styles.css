@@ -1,0 +1,158 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #005f9e;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    min-height: 300px;
+}
+
+header h1 {
+    margin-top: 5rem;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Navigation */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #333;
+    padding: 0.5rem;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #9e0000cd;
+}
+
+/* Main Content */
+main {
+    margin-top: 5rem;
+    padding: 2rem 1rem;
+}
+
+.section {
+    padding: 2rem 0;
+    min-height: 500px;
+    font-size: 2em;
+}
+
+.section a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.section h2 {
+    font-size: 5rem;
+    color: #005f9e;
+    margin-bottom: 1rem;
+}
+
+/* Layout with Flexbox and Grid */
+.section-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.section img {
+    max-width: 100%;
+    border-radius: 5px;
+    flex: 1 1 40%;
+    width: 30%;
+    padding: 5rem 10rem;
+}
+
+.section cite {
+    font-size: .5em;
+}
+
+.section-content div {
+    flex: 1 1 50%;
+}
+
+#intro {
+    background-color: #9e0000cc;
+    border-radius: 15px;
+    padding: 5rem;
+    margin: 2rem 0;
+    color: #005f9e;
+}
+
+#intro h2 {
+    text-shadow: 3px 3px 4px white;
+}
+
+#history {
+    background-color: #005f9e;
+    border-radius: 15px;
+    padding: 5rem 2rem;
+    margin: 2rem 0;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-content {
+        flex-direction: column;
+    }
+
+    .section-content img, .section-content div {
+        flex: 1 1 100%;
+    }
+}
